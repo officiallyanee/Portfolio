@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .load{
+            animation-name: load;
+            animation-duration: 2s;
+        }      
+         
+    </style>
+    <title>Animation</title>
+</head>
+<body>
+    <button class="btn" onclick="
+    document.querySelector('.btn').classList.add('load');
+     image1.src = 'twitter.svg';
+     setTimeout(function(){
+        image1.src = 'insta.svg';
+    }, 2000);  
+    ">
+    hello
+        <img src= "fb.svg" class="img" id="imgChange">
+    </button>
+    <img id="myImage" src="insta.svg" style="display: none;" alt="Image">
+</body>
+<script>
+    const image1 = document.getElementById("imgChange");
+</script>
+</html>
