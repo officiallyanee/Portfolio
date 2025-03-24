@@ -8,13 +8,9 @@
 html {
   scroll-behavior: smooth;
   transition:0.5s;
-  scroll-snap-type: y mandatory;
-}
-section {
-  scroll-snap-align: start;
 }
 body {
-  background-color: #fff;
+  background-color:rgb(2, 64, 50);
   font-family: "Poppins", sans-serif;
 }
 a {
@@ -40,8 +36,6 @@ nav {
   color:#bdb3a3;
   font-weight: 550;
   font-size: 1.25rem;
-  display: flex;
-  justify-content: space-around;
   padding: 0.5rem 0.9rem;
   transition: all 0.3s ease 0s;
 }
@@ -105,8 +99,8 @@ header h1 {
   border-width:0.3rem;
   border-style: solid;
   overflow: hidden;
-	box-shadow: 0 0.3rem 0.938rem 0px rgba(0,0,0,0.6);
-	transform: translatey(0px);
+	box-shadow: 0 0.3rem 0.94rem 0rem rgba(0,0,0,0.6);
+	transform: translatey(0rem);
 	animation: float 3s ease-in-out infinite;
 }
 .headimg img {
@@ -373,13 +367,13 @@ header h1 {
   text-align: center;
   font-size: 2rem;
   color:white;
-  padding-top: 20px;
+  padding-top: 1.25rem;
 }
 .middle_sec{
   display:block; 
   height:45%; 
-  padding-left: 120px; 
-  padding-right: 120px;
+  padding-left: 7.5rem; 
+  padding-right: 7.5rem;
 }
 
 footer {
@@ -442,7 +436,7 @@ footer p {
     justify-self: center;
   }
   .middle_sec{
-    padding:0px;
+    padding:0rem;
     height:20rem; 
   }
   .tech_stack{
@@ -505,6 +499,10 @@ footer p {
     margin:1rem;
     min-width:7rem;
     width:11rem;
+    padding-top:0.5rem;
+  }
+  .nav_links{
+    padding-top:0.3rem;
   }
   .name{
     font-size: 2.5rem;
@@ -513,13 +511,33 @@ footer p {
     font-size: 0.8rem;
   }
   .img_article{
-    margin-right:0px;
+    margin-right:0rem;
   }
-  nav{
-    padding-left: 10%;
+  .middle{
+    position:fixed;
+    left: 35%;
+  }
+  .left{
+    padding-left:5%;
+    position:fixed;
+    left: 0%;
+    width:33vw;
+  }
+  .right{
+    padding-right:5%;
+    padding-left:2%;
+    position:fixed;
+    right:0%;
+    width:33vw;
   }
   .section2{
     padding:1.5rem;
+  }
+  .post{
+    animation: none;
+  }
+  .post_item4{
+    animation: none;
   }
   .post h1{
     font-size: 1.2rem;
@@ -568,22 +586,28 @@ footer p {
   .clubs{
     margin:1rem;
   }
+  .club_list{
+    padding-left:0.7rem;
+  }
+  .skill_list{
+    padding-left:0.7rem;
+  }
   .rp{
     margin-top: 1rem;
   }
 }
 @keyframes float {
 	0% {
-		box-shadow: 0 0.3rem 0.938rem 0px rgba(0,0,0,0.6);
-		transform: translatey(0px);
+		box-shadow: 0 0.3rem 0.9rem 0rem rgba(0,0,0,0.6);
+		transform: translatey(0rem);
 	}
 	50% {
-		box-shadow: 0 1.563rem 0.938rem 0px rgba(0,0,0,0.2);
+		box-shadow: 0 1.56rem 0.9rem 0rem rgba(0,0,0,0.2);
 		transform: translatey(-1.25rem);
 	}
 	100% {
-		box-shadow: 0 0.3rem 0.938rem 0px rgba(0,0,0,0.6);
-		transform: translatey(0px);
+		box-shadow: 0 0.3rem 0.9rem 0rem rgba(0,0,0,0.6);
+		transform: translatey(0rem);
 	}
 }
 @keyframes zoom{
@@ -628,25 +652,25 @@ footer p {
 @keyframes highlighter{
     from{
       background-color: #edf7fa;
-      border: 0.063rem solid #002119;
+      border: 0.06rem solid #002119;
       color: #002119;
     }
     to{
       background-color: #002119;
-      border: 0.063rem solid #edf7fa;
+      border: 0.06rem solid #edf7fa;
       color: #edf7fa;
     }
 }
 @keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
+  0% { transform: translate(0.6rem, 0.6rem) rotate(0deg); }
+  10% { transform: translate(-0.6rem, -0.125rem) rotate(-1deg); }
+  20% { transform: translate(-0.2rem, 0rem) rotate(1deg); }
+  30% { transform: translate(0.2rem, 0.125rem) rotate(0deg); }
+  40% { transform: translate(0.6rem, -0.6rem) rotate(1deg); }
+  50% { transform: translate(-0.6rem, 0.125rem) rotate(-1deg); }
+  60% { transform: translate(-0.2rem, 0.6rem) rotate(0deg); }
+  70% { transform: translate(0.2rem, 0.6rem) rotate(-1deg); }
+  80% { transform: translate(-0.6rem, -0.6rem) rotate(1deg); }
+  90% { transform: translate(0.6rem, 0.125rem) rotate(0deg); }
+  100% { transform: translate(0.6rem, -0.125rem) rotate(-1deg); }
 }
