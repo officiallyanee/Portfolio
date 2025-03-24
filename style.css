@@ -623,10 +623,6 @@ footer p {
     clip-path: inset(0 0 0 0);
   }
 }
-# @media screen and (-webkit-min-device-pixel-ratio:0)
-{
-  #safari { background-color:  background-color:rgb(2, 64, 50);}
-}
 @keyframes textchange{
   20%{
     transform:translateY(-101%);
