@@ -28,12 +28,13 @@ nav {
   margin-right: 1.25rem;
 }
 .nav_links {
+  width:100vw;
   list-style: none;
   display: flex;
+  background-color: rgb(2, 64, 50);
 }
 
 .nav_links li a {
-
   color:#bdb3a3;
   font-weight: 550;
   font-size: 1.25rem;
