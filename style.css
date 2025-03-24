@@ -12,6 +12,7 @@ html {
 body {
   background-color:rgb(2, 64, 50);
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 a {
   text-decoration: none;
@@ -135,7 +136,6 @@ header h1 {
   opacity:0.7;
 }
 .section1 {
-  background-color:rgb(2, 64, 50);
   width:100vw;
   position: fixed;
   display:flex;
@@ -196,11 +196,11 @@ header h1 {
 }
 .post_item1 {
   display:inline-block;
-  max-width: 34.375rem;
+  width: 34.375rem;
 }
 .post_item2 { 
   display:inline-block;
-  max-width: 46.875rem;
+  width: 46.875rem;
 }
 .post_item3 {
   max-width: 82.5rem;
@@ -402,7 +402,14 @@ footer p {
   animation: shake 0.5s;
   animation-iteration-count: infinite;
 }
-
+@media(max-width:88.65rem){
+  .post_item1{
+    width:100%;
+  }
+  .post_item2{
+    width:100%;
+  }
+}
 @media (max-width: 62.5rem) {
   .recent_posts{
     flex-direction: column;
@@ -623,6 +630,7 @@ footer p {
     clip-path: inset(0 0 0 0);
   }
 }
+
 @keyframes textchange{
   20%{
     transform:translateY(-101%);
